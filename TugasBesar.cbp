@@ -12,7 +12,9 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++14" />
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -32,7 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="include/child.h" />
+		<Unit filename="include/parent.h" />
+		<Unit filename="include/relasi.h" />
+		<Unit filename="src/child.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/parent.cpp" />
+		<Unit filename="src/relasi.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
