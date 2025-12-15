@@ -1,5 +1,3 @@
-HEADER RELASI
-
 #ifndef RELASI_H_INCLUDED
 #define RELASI_H_INCLUDED
 #include "child.h"
@@ -11,6 +9,8 @@ using namespace std;
 
 struct Parent;
 struct Child;
+
+
 
 typedef struct Relasi *adrRelasi;
 
