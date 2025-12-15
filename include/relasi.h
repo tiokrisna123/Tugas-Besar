@@ -10,6 +10,8 @@ using namespace std;
 struct Parent;
 struct Child;
 
+
+
 typedef struct Relasi *adrRelasi;
 
 struct Relasi {
