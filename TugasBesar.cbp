@@ -33,6 +33,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="include" />
 		</Compiler>
 		<Unit filename="include/child.h" />
 		<Unit filename="include/parent.h" />
