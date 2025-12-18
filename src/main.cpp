@@ -28,17 +28,14 @@ void menu() {
 }
 
 int main() {
-    // Deklarasi List
     ListParent LP;
     ListChild LC;
     ListRelasi LR;
 
-    // Inisialisasi List
     createListParent(LP);
     createListChild(LC);
     createListRelasi(LR);
 
-    // --- Data Dummy (Sama seperti sebelumnya) ---
     insertParent(LP, alokasiParent(101, "Nike", "USA"));
     insertParent(LP, alokasiParent(202, "Adidas", "Jerman"));
     insertParent(LP, alokasiParent(303, "Ventela", "Indonesia"));
@@ -56,18 +53,12 @@ int main() {
     insertRelasi(LR, LP, LC, 303, "VNT01"); 
     insertChild(LC, alokasiChild("UNR01", "Sepatu Polos", "Casual", 100000, 39));
 
-    // --- Logika Menu ---
     int pilihan;
     do {
-        // [PERUBAHAN 1] Bersihkan layar SEBELUM menampilkan menu
-        // Ini memastikan menu selalu muncul di layar kosong
         system("cls || clear"); 
 
         menu();
         cin >> pilihan;
-
-        // [PERUBAHAN 2] Bersihkan layar SETELAH memilih menu
-        // Ini memastikan fitur yang dipilih (misal: input data) muncul di layar kosong
         system("cls || clear"); 
 
         int idP;
@@ -193,16 +184,11 @@ int main() {
                 cout << "Pilihan tidak valid." << endl;
                 break;
         }
-
-        // --- Logika Pause agar user sempat membaca hasil ---
         if (pilihan != 0) {
             cout << "\nTekan ENTER untuk kembali ke menu...";
-            // Perbaikan buffer: Hanya ignore jika sebelumnya ada input cin >>
-            // Jika masuk ke case yang hanya print (seperti case 4), ignore bisa bikin harus tekan enter 2x.
-            // Namun untuk keamanan standar pemula, kita gunakan cara aman:
-            cin.ignore(1000, '\n'); // Membersihkan sisa newline di buffer
-            if (cin.peek() == '\n') cin.ignore(); // Cek extra safety
-            cin.get(); // Menunggu user menekan Enter
+            cin.ignore(1000, '\n'); 
+            if (cin.peek() == '\n') cin.ignore(); 
+            cin.get(); 
         }
 
     } while (pilihan != 0);
