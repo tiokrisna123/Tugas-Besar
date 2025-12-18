@@ -16,7 +16,7 @@ void menu() {
     cout << "3. Hubungkan Sepatu ke Merk (Relasi)" << endl;
     cout << "4. Tampilkan Semua Merk" << endl;
     cout << "5. Tampilkan Semua Sepatu" << endl;
-    cout << "6. Tampilkan Sepatu dari Merk Tertentu" << endl;
+    cout << "6. Tampilkan Sepatu dari ID Merk Tertentu" << endl;
     cout << "7. Tampilkan Semua Merk dengan Sepatu Terkait" << endl;
     cout << "8. Hapus Merk (Parent) dan Relasinya" << endl;
     cout << "9. Hapus Sepatu (Child) dan Relasinya" << endl;
