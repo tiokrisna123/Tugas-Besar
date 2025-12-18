@@ -92,7 +92,7 @@ int main() {
     // Tambah satu sepatu tanpa merk (Unrelated Child)
 
     insertChild(LC, alokasiChild("UNR01", "Sepatu Polos", "Casual", 100000, 39));
-    
+
     int pilihan;
     do {
         system("cls || clear"); 
@@ -154,7 +154,7 @@ int main() {
                 showAllChild(LC);
                 break;
             case 6:
-                cout << "--- Tampilkan Sepatu dari Merk ---" << endl;
+                cout << "--- Tampilkan Sepatu dari ID Merk ---" << endl;
                 cout << "Masukkan ID Merk: "; cin >> idP;
                 cout << endl;
                 showChildFromParent(LR, idP);
