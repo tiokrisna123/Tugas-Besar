@@ -15,7 +15,7 @@ adrChild alokasiChild(string id, string nama, string jenis, int harga, int ukura
     C->next = NULL;
     return C;
 }
-//adjadjauidau
+
 void insertChild(ListChild &L, adrChild P) {
     if (L.first == NULL) {
         L.first = P;
