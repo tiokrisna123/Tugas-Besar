@@ -10,7 +10,7 @@ struct Parent;
 struct Relasi;
 
 typedef struct Child *adrChild;
-
+//askkak
 struct Child {
     string idSepatu;
     string namaSepatu;
