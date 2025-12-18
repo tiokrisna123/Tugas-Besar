@@ -53,6 +53,46 @@ int main() {
     insertRelasi(LR, LP, LC, 303, "VNT01"); 
     insertChild(LC, alokasiChild("UNR01", "Sepatu Polos", "Casual", 100000, 39));
 
+        // Tambah Parent
+
+    insertParent(LP, alokasiParent(101, "Nike", "USA"));
+
+    insertParent(LP, alokasiParent(202, "Adidas", "Jerman"));
+
+    insertParent(LP, alokasiParent(303, "Ventela", "Indonesia"));
+
+
+
+    // Tambah Child
+
+    insertChild(LC, alokasiChild("SNK01", "Air Force 1", "Lifestyle", 1200000, 42));
+
+    insertChild(LC, alokasiChild("SNK02", "Air Jordan 1", "Basket", 2500000, 43));
+
+    insertChild(LC, alokasiChild("AD01", "Ultraboost 22", "Running", 2100000, 41));
+
+    insertChild(LC, alokasiChild("AD02", "Samba OG", "Lifestyle", 1100000, 42));
+
+    insertChild(LC, alokasiChild("VNT01", "Back to 70s", "Casual", 300000, 40));
+
+
+
+    // Hubungkan Relasi
+
+    insertRelasi(LR, LP, LC, 101, "SNK01"); // Nike -> Air Force 1
+
+    insertRelasi(LR, LP, LC, 101, "SNK02"); // Nike -> Air Jordan 1
+
+    insertRelasi(LR, LP, LC, 202, "AD01");  // Adidas -> Ultraboost 22
+
+    insertRelasi(LR, LP, LC, 202, "AD02");  // Adidas -> Samba OG
+
+    insertRelasi(LR, LP, LC, 303, "VNT01"); // Ventela -> Back to 70s
+
+    // Tambah satu sepatu tanpa merk (Unrelated Child)
+
+    insertChild(LC, alokasiChild("UNR01", "Sepatu Polos", "Casual", 100000, 39));
+    
     int pilihan;
     do {
         system("cls || clear"); 
