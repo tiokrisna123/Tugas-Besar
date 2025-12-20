@@ -1,6 +1,5 @@
 #include "child.h"
 
-// Implementasi fungsi-fungsi untuk Child
 void createListChild(ListChild &L) {
     L.first = NULL;
 }
@@ -32,10 +31,8 @@ void deleteChild(ListChild &L, string id) {
     adrChild C = findChild(L, id);
     if (C != NULL) {
         if (C == L.first) {
-            // Kasus 1: Node pertama
             L.first = C->next;
         } else {
-            // Kasus 2: Node di tengah atau terakhir
             adrChild prec = L.first;
             while (prec->next != C) {
                 prec = prec->next;
