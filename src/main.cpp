@@ -10,7 +10,7 @@ void menu() {
     cout << "\n=================================================" << endl;
     cout << "          APLIKASI MANAJEMEN MERK DAN SEPATU" << endl;
     cout << "            (Multi-Level Linked List)" << endl;
-    cout << "=================================================" << endl;
+    cout << "===================================================" << endl;
     cout << "1. Tambah Merk (Parent)" << endl;
     cout << "2. Tambah Sepatu (Child)" << endl;
     cout << "3. Hubungkan Sepatu ke Merk (Relasi)" << endl;
