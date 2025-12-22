@@ -17,7 +17,12 @@
 	<iostream>
 	<string>
 
-1766443839 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\main.cpp
+1766445987 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\main.cpp
+	<iostream>
+	<string>
+	"parent.h"
+	"child.h"
+	"relasi.h"
 
 1766233787 905b91a9cf34b7cd57da61e6f9f567f8cfd9a
 	<iostream>

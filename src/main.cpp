@@ -14,8 +14,8 @@ void menu() {
 
     cout << "1. Tambah Merk (Parent)\n";
     cout << "2. Tambah Sepatu (Child)\n";
-    cout << "3. Tampilkan Semua Merk\n";
-    cout << "4. Tampilkan Semua Sepatu\n";
+    cout << "3. Tampilkan Semua Sepatu\n";
+    cout << "4. Tampilkan Semua Merk\n";
     cout << "5. Hubungkan Sepatu ke Merk\n";
     cout << "6. Tampilkan Sepatu dari Merk Tertentu\n";
     cout << "7. Tampilkan Semua Merk dengan Sepatu Terkait\n";
