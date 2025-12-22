@@ -1,6 +1,5 @@
 #include "parent.h"
 
-// Implementasi fungsi-fungsi untuk Parent
 void createListParent(ListParent &L) {
     L.first = NULL;
 }
@@ -30,10 +29,8 @@ void deleteParent(ListParent &L, int id) {
     adrParent P = findParent(L, id);
     if (P != NULL) {
         if (P == L.first) {
-            // Kasus 1: Node pertama
             L.first = P->next;
         } else {
-            // Kasus 2: Node di tengah atau terakhir
             adrParent prec = L.first;
             while (prec->next != P) {
                 prec = prec->next;

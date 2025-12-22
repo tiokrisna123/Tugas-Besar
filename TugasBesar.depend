@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1765792815 source:d:\semester 3\strukdat\tugas-besar\src\child.cpp
 	"child.h"
 
@@ -7,25 +8,82 @@
 	<string>
 
 1765792815 source:d:\semester 3\strukdat\tugas-besar\src\main.cpp
+=======
+1766429132 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\child.cpp
+	"child.h"
+
+1765788895 c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\include\child.h
+	<iostream>
+	<string>
+
+1766443839 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\main.cpp
+>>>>>>> 017905b91a9cf34b7cd57da61e6f9f567f8cfd9a
 	<iostream>
 	<string>
 	"parent.h"
 	"child.h"
 	"relasi.h"
 
+<<<<<<< HEAD
 1765793217 d:\semester 3\strukdat\tugas-besar\include\parent.h
 	<iostream>
 	<string>
 
 1765792815 d:\semester 3\strukdat\tugas-besar\include\relasi.h
+=======
+1765803732 c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\include\parent.h
+	<iostream>
+	<string>
+
+1765790754 c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\include\relasi.h
+>>>>>>> 017905b91a9cf34b7cd57da61e6f9f567f8cfd9a
 	"child.h"
 	"parent.h"
 	<iostream>
 	<string>
 
+<<<<<<< HEAD
 1765792815 source:d:\semester 3\strukdat\tugas-besar\src\parent.cpp
 	"parent.h"
 
 1765792815 source:d:\semester 3\strukdat\tugas-besar\src\relasi.cpp
 	"relasi.h"
 
+=======
+1766429132 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\parent.cpp
+	"parent.h"
+
+1766429132 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\relasi.cpp
+	"relasi.h"
+
+1766065398 source:c:\users\lenovo\documents\new folder\strujdat\tugas-besar\src\main.cpp
+	<iostream>
+	<string>
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1766060032 c:\users\lenovo\documents\new folder\strujdat\tugas-besar\include\parent.h
+	<iostream>
+	<string>
+
+1766061086 c:\users\lenovo\documents\new folder\strujdat\tugas-besar\include\child.h
+	<iostream>
+	<string>
+
+1766060032 c:\users\lenovo\documents\new folder\strujdat\tugas-besar\include\relasi.h
+	"child.h"
+	"parent.h"
+	<iostream>
+	<string>
+
+1766060032 source:c:\users\lenovo\documents\new folder\strujdat\tugas-besar\src\parent.cpp
+	"parent.h"
+
+1766060032 source:c:\users\lenovo\documents\new folder\strujdat\tugas-besar\src\relasi.cpp
+	"relasi.h"
+
+1766060854 source:c:\users\lenovo\documents\new folder\strujdat\tugas-besar\src\child.cpp
+	"child.h"
+
+>>>>>>> 017905b91a9cf34b7cd57da61e6f9f567f8cfd9a
