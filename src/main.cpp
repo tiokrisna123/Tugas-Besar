@@ -5,63 +5,33 @@
 #include "relasi.h"
 
 using namespace std;
+
 void separator();
 void menu() {
-<<<<<<< HEAD
     separator();
-    //cout << "\n=================================================\n";
     cout << "   APLIKASI MANAJEMEN MERK DAN SEPATU\n";
     cout << "      (Multi-Level Linked List)\n";
-    //cout << "=================================================\n";
 
-    cout << "\n--- MENU MASTER DATA ---\n";
     cout << "1. Tambah Merk (Parent)\n";
     cout << "2. Tambah Sepatu (Child)\n";
     cout << "3. Tampilkan Semua Merk\n";
     cout << "4. Tampilkan Semua Sepatu\n";
-
-    cout << "\n--- MENU RELASI ---\n";
     cout << "5. Hubungkan Sepatu ke Merk\n";
     cout << "6. Tampilkan Sepatu dari Merk Tertentu\n";
     cout << "7. Tampilkan Semua Merk dengan Sepatu Terkait\n";
     cout << "8. Hapus Relasi Tertentu\n";
-
-    cout << "\n--- MENU PENGHAPUSAN DATA ---\n";
     cout << "9. Hapus Merk (Parent) dan Relasinya\n";
     cout << "10. Hapus Sepatu (Child) dan Relasinya\n";
-
-    cout << "\n--- MENU LAPORAN ---\n";
     cout << "11. Lihat Sepatu Tanpa Merk\n";
 
     cout << "\n0. Keluar\n";
     separator();
-    //cout << "-------------------------------------------------\n";
-=======
-    cout << "\n=================================================" << endl;
-    cout << "          APLIKASI MANAJEMEN MERK DAN SEPATU" << endl;
-    cout << "            (Multi-Level Linked List)" << endl;
-    cout << "===================================================" << endl;
-    cout << "1. Tambah Merk (Parent)" << endl;
-    cout << "2. Tambah Sepatu (Child)" << endl;
-    cout << "3. Hubungkan Sepatu ke Merk (Relasi)" << endl;
-    cout << "4. Tampilkan Semua Merk" << endl;
-    cout << "5. Tampilkan Semua Sepatu" << endl;
-    cout << "6. Tampilkan Sepatu dari ID Merk Tertentu" << endl;
-    cout << "7. Tampilkan Semua Merk dengan Sepatu Terkait" << endl;
-    cout << "8. Hapus Merk (Parent) dan Relasinya" << endl;
-    cout << "9. Hapus Sepatu (Child) dan Relasinya" << endl;
-    cout << "10. Hapus Relasi Tertentu" << endl;
-    cout << "11. Hitung Sepatu Tanpa Merk (Unrelated Child)" << endl;
-    cout << "0. Keluar" << endl;
-    cout << "-------------------------------------------------" << endl;
->>>>>>> 05d7f46bf9f374ac7ec434520c4675ee555f7a63
     cout << "Pilihan Anda: ";
 }
 
 void separator() {
     cout << "\n=================================================\n";
 }
-
 
 int main() {
     ListParent LP;
@@ -82,25 +52,20 @@ int main() {
     insertChild(LC, alokasiChild("AD02", "Samba OG", "Lifestyle", 1100000, 42));
     insertChild(LC, alokasiChild("VNT01", "Back to 70s", "Casual", 300000, 40));
 
-    insertRelasi(LR, LP, LC, 101, "SNK01"); 
-    insertRelasi(LR, LP, LC, 101, "SNK02"); 
-    insertRelasi(LR, LP, LC, 202, "AD01");  
-    insertRelasi(LR, LP, LC, 202, "AD02");  
-    insertRelasi(LR, LP, LC, 303, "VNT01"); 
-    insertChild(LC, alokasiChild("UNR01", "Sepatu Polos", "Casual", 100000, 39));
+    insertRelasi(LR, LP, LC, 101, "SNK01");
+    insertRelasi(LR, LP, LC, 101, "SNK02");
+    insertRelasi(LR, LP, LC, 202, "AD01");
+    insertRelasi(LR, LP, LC, 202, "AD02");
+    insertRelasi(LR, LP, LC, 303, "VNT01");
 
+    insertChild(LC, alokasiChild("UNR01", "Sepatu Polos", "Casual", 100000, 39));
 
     int pilihan;
     do {
-        system("cls || clear"); 
+        system("cls || clear");
 
         menu();
         cin >> pilihan;
-<<<<<<< HEAD
-
-=======
-        system("cls || clear"); 
->>>>>>> 05d7f46bf9f374ac7ec434520c4675ee555f7a63
 
         int idP;
         string idC;
@@ -124,6 +89,7 @@ int main() {
                     }
                 }
                 break;
+
             case 2:
                 cout << "--- Tambah Sepatu (Child) ---" << endl;
                 cout << "ID Sepatu (string): "; cin >> idC;
@@ -142,16 +108,19 @@ int main() {
                     }
                 }
                 break;
+
             case 3:
                 separator();
                 showAllChild(LC);
                 separator();
                 break;
+
             case 4:
                 separator();
                 showAllParent(LP);
                 separator();
                 break;
+
             case 5:
                 cout << "--- Hubungkan Sepatu ke Merk ---" << endl;
                 cout << "\nDaftar Merk Tersedia: " << endl;
@@ -165,24 +134,43 @@ int main() {
                 cin >> idC;
                 insertRelasi(LR, LP, LC, idP, idC);
                 break;
+
             case 6:
-<<<<<<< HEAD
                 cout << "--- Tampilkan Sepatu dari Merk ---" << endl;
                 cout << "\nDaftar Merk Tersedia: " << endl;
                 showAllParent(LP);
                 cout << "Masukan ID Merk: ";
                 cin >> idP;
-=======
-                cout << "--- Tampilkan Sepatu dari ID Merk ---" << endl;
-                cout << "Masukkan ID Merk: "; cin >> idP;
-                cout << endl;
->>>>>>> 05d7f46bf9f374ac7ec434520c4675ee555f7a63
                 showChildFromParent(LR, idP);
                 break;
+
             case 7:
                 showParentWithRelations(LP, LR);
                 break;
+
             case 8:
+                cout << "--- Hapus Relasi ---" << endl;
+                cout << "\nDaftar Merk yang Tersedia: " << endl;
+                showAllParent(LP);
+                cout << "ID Merk (Parent) relasi: ";
+                cin >> idP;
+
+                cout << "\nDaftar Sepatu yang Tersedia: " << endl;
+                showAllChild(LC);
+                cout << "ID Sepatu (Child) relasi: ";
+                cin >> idC;
+
+                P = findParent(LP, idP);
+                C = findChild(LC, idC);
+                if (P != NULL && C != NULL) {
+                    deleteRelasi(LR, P, C);
+                    cout << "\nRelasi berhasil dihapus." << endl;
+                } else {
+                    cout << "\nGagal: Merk atau Sepatu tidak ditemukan." << endl;
+                }
+                break;
+
+            case 9:
                 cout << "--- Hapus Merk (Parent) ---" << endl;
                 cout << "\nDaftar Merk Tersedia: " << endl;
                 showAllParent(LP);
@@ -204,11 +192,13 @@ int main() {
                     cout << "\nMerk tidak ditemukan." << endl;
                 }
                 break;
-            case 9:
+
+            case 10:
                 cout << "--- Hapus Sepatu (Child) ---" << endl;
                 cout << "\nDaftar Sepatu yang Tersedia: " << endl;
                 showAllChild(LC);
-                cout << "Masukkan ID Sepatu yang akan dihapus: "; cin >> idC;
+                cout << "Masukkan ID Sepatu yang akan dihapus: ";
+                cin >> idC;
                 C = findChild(LC, idC);
                 if (C != NULL) {
                     R = LR.first;
@@ -225,33 +215,7 @@ int main() {
                     cout << "\nSepatu tidak ditemukan." << endl;
                 }
                 break;
-            case 10:
-                cout << "--- Hapus Relasi ---" << endl;
-<<<<<<< HEAD
-                cout << "\nDaftar Merk yang Tersedia: " << endl;
-                showAllParent(LP);
-                cout << "ID Merk (Parent) relasi: ";
-                cin >> idP;
 
-                cout << "\nDaftar Sepatu yang Tersedia: " << endl;
-                showAllChild(LC);
-                cout << "ID Sepatu (Child) relasi: ";
-                cin >> idC;
-
-=======
-                cout << "ID Merk (Parent): "; cin >> idP;
-                cout << "ID Sepatu (Child): "; cin >> idC;
->>>>>>> 05d7f46bf9f374ac7ec434520c4675ee555f7a63
-                P = findParent(LP, idP);
-                C = findChild(LC, idC);
-                if (P != NULL && C != NULL) {
-                    deleteRelasi(LR, P, C);
-                    cout << "\nRelasi berhasil dihapus." << endl;
-                } else {
-                    cout << "\nGagal: Merk atau Sepatu tidak ditemukan." << endl;
-                }
-                break;
-<<<<<<< HEAD
             case 11: {
                 separator();
                 cout << "--- Sepatu Tanpa Merk (Unrelated Child) ---" << endl;
@@ -286,25 +250,21 @@ int main() {
                     }
                 }
                 separator();
-=======
-            case 11:
-                cout << "Jumlah Sepatu Tanpa Merk: "
-                     << countChildWithoutParent(LC, LR) << endl;
->>>>>>> 05d7f46bf9f374ac7ec434520c4675ee555f7a63
                 break;
             }
+
             case 0:
                 cout << "Program selesai. Terima kasih!" << endl;
                 break;
+
             default:
                 cout << "Pilihan tidak valid." << endl;
-                break;
         }
+
         if (pilihan != 0) {
             cout << "\nTekan ENTER untuk kembali ke menu...";
-            cin.ignore(1000, '\n'); 
-            if (cin.peek() == '\n') cin.ignore(); 
-            cin.get(); 
+            cin.ignore(1000, '\n');
+            cin.get();
         }
 
     } while (pilihan != 0);

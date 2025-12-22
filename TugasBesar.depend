@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1765790526 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\child.cpp
+1766429132 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\child.cpp
 	"child.h"
 
 1765788895 c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\include\child.h
@@ -23,10 +23,10 @@
 	<iostream>
 	<string>
 
-1765790526 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\parent.cpp
+1766429132 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\parent.cpp
 	"parent.h"
 
-1765790526 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\relasi.cpp
+1766429132 source:c:\users\62813\onedrive - telkom university\telkom tio\semester 3\struktur data\tugas-besar\src\relasi.cpp
 	"relasi.h"
 
 1766065398 source:c:\users\lenovo\documents\new folder\strujdat\tugas-besar\src\main.cpp
