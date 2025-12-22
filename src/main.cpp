@@ -62,7 +62,6 @@ int main() {
 
     int pilihan;
     do {
-        system("cls || clear");
 
         menu();
         cin >> pilihan;
