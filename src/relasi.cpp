@@ -1,7 +1,5 @@
 #include "relasi.h"
 
-// Implementasi fungsi-fungsi untuk Relasi
-
 void createListRelasi(ListRelasi &L) {
     L.first = NULL;
 }
@@ -58,10 +56,8 @@ void deleteRelasi(ListRelasi &L, adrParent P, adrChild C) {
 
     if (R != NULL) {
         if (R == L.first) {
-            // Kasus 1: Node pertama
             L.first = R->next;
         } else {
-            // Kasus 2: Node di tengah atau terakhir
             prec->next = R->next;
         }
         string idP = to_string(P->idMerk);
