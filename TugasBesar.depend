@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1765792815 source:d:\semester 3\strukdat\tugas-besar\src\child.cpp
+	"child.h"
+
+1765792815 d:\semester 3\strukdat\tugas-besar\include\child.h
+	<iostream>
+	<string>
+
+1765792815 source:d:\semester 3\strukdat\tugas-besar\src\main.cpp
+	<iostream>
+	<string>
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1765793217 d:\semester 3\strukdat\tugas-besar\include\parent.h
+	<iostream>
+	<string>
+
+1765792815 d:\semester 3\strukdat\tugas-besar\include\relasi.h
+	"child.h"
+	"parent.h"
+	<iostream>
+	<string>
+
+1765792815 source:d:\semester 3\strukdat\tugas-besar\src\parent.cpp
+	"parent.h"
+
+1765792815 source:d:\semester 3\strukdat\tugas-besar\src\relasi.cpp
+	"relasi.h"
+
